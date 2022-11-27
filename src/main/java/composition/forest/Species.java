@@ -1,7 +1,7 @@
 package composition.forest;
 
 public enum Species {
-    SQUIRREL(0), WOODPECKER(0.05), MONKEY(-0.1);
+    SQUIRREL(0.15), WOODPECKER(0.1), MONKEY(-0.1);
 
    private double impactModifier;
 
