@@ -2,6 +2,7 @@ package basics.people;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Parrot {
 
@@ -41,6 +42,22 @@ public class Parrot {
         knownWords.add(newWord);
     }
 
+
+    public void tellMeSomething() {
+        if (knownWords.isEmpty()) {
+            System.out.println(name + " don't know any words :(");
+            return;
+        }
+        String story = "";
+        Random random = new Random();
+        int wordsInStory = random.nextInt(10) + 1;
+        for (int i = 0; i < wordsInStory; i++) {
+            story += knownWords.get(random.nextInt(knownWords.size()));
+            story += " ";
+        }
+        story += ".";
+        System.out.println(story);
+    }
 
     @Override
     public String toString() {

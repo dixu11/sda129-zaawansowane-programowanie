@@ -1,6 +1,5 @@
 package basics.people;
 
-import java.awt.*;
 import java.util.Random;
 
 public class ParrotDemo {
