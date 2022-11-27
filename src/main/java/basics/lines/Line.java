@@ -14,6 +14,10 @@ public class Line {
             System.out.print(fill);
         }
         System.out.println();
+
+
+//        String fillString = fill + "";
+//        System.out.println(fillString.repeat(length));
     }
 
     @Override
