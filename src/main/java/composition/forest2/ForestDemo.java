@@ -1,0 +1,82 @@
+package composition.forest2;
+
+import composition.forest2.inhabitant.Inhabitant;
+import composition.forest2.inhabitant.InhabitantType;
+import composition.forest2.parasite.Parasite;
+import composition.forest2.parasite.ParasiteType;
+import composition.forest2.weather.Weather;
+import composition.forest2.weather.WeatherType;
+
+public class ForestDemo {
+    public static void main(String[] args) {
+
+        Tree tree1 = new Tree();
+        Tree tree2 = new Tree();
+        Tree tree3 = new Tree();
+        Inhabitant inhabitant = new Inhabitant(InhabitantType.getRandomInhabitantType());
+        Inhabitant inhabitant2 = new Inhabitant(InhabitantType.getRandomInhabitantType());
+        Inhabitant inhabitant3 = new Inhabitant(InhabitantType.getRandomInhabitantType());
+        Parasite parasite = new Parasite(ParasiteType.getRandomParasiteType());
+        Parasite parasite2 = new Parasite(ParasiteType.getRandomParasiteType());
+        Parasite parasite3 = new Parasite(ParasiteType.getRandomParasiteType());
+        Weather weather = new Weather(WeatherType.getRandomWeather());
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        tree1.addInhabitant(inhabitant);
+        tree1.addParasite(parasite);
+        tree2.addParasite(parasite2);
+        tree3.addParasite(parasite3);
+        tree2.addInhabitant(inhabitant2);
+        tree3.addInhabitant(inhabitant3);
+        tree1.addWeather(weather);
+        tree2.addWeather(weather);
+        tree3.addWeather(weather);
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        tree1.afterOneMonth();
+        tree2.afterOneMonth();
+        tree3.afterOneMonth();
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+        System.out.println("__________________________________________________");
+        tree1.afterOneYear();
+        tree2.afterOneYear();
+        tree3.afterOneYear();
+        System.out.println(tree1);
+        System.out.println(tree2);
+        System.out.println(tree3);
+    }
+}
