@@ -1,7 +1,5 @@
 package composition.forest;
 
-import java.util.Random;
-
 public class Tree {
 
     private int lengthInMeters;
@@ -49,8 +47,6 @@ public class Tree {
         }
     }
 
-
-    @Override
 
     @java.lang.Override
     public java.lang.String toString() {

@@ -16,7 +16,6 @@ public class Animal {
         return impactOnTree;
     }
 
-    @Override
     public java.lang.String toString() {
         return "Animal{" +
                 "type=" + type +
