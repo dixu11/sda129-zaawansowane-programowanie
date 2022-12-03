@@ -2,7 +2,26 @@ package advanced.inheritance;
 
 public  class AnimalsDemo {
     public static void main(String[] args) {
+        Dog dog = new Dog("Rex", 1, false);
+        //dog = new Cat(); // działałoby gdyby referencja dog była typu Animal lub Object
+        Dog dog2 = new Dog();
 
+        dog.bark();
+        dog.sit();
+        dog.eat();
+
+        Cat cat = new Cat("Kicia Mała", 4, 6);
+        Cat cat2 = new Cat();
+
+        cat.meowing();
+        cat.climbDoor();
+        cat.eat();
+
+        AnimalKeeper animalKeeper = new AnimalKeeper();
+//        animalKeeper.feedDog(dog);
+//        animalKeeper.feedCat(cat);
+        animalKeeper.feedAnimal(dog);
+        animalKeeper.feedAnimal(cat);
     }
 }
 
