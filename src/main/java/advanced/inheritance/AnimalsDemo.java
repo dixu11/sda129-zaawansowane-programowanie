@@ -1,5 +1,8 @@
 package advanced.inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public  class AnimalsDemo {
     public static void main(String[] args) {
         Dog dog = new Dog("Rex", 1, false);
@@ -22,6 +25,33 @@ public  class AnimalsDemo {
 //        animalKeeper.feedCat(cat);
         animalKeeper.feedAnimal(dog);
         animalKeeper.feedAnimal(cat);
+
+        System.out.println("------------");
+
+        //polimorfizm
+        Animal animal = new Dog();
+        animal.makeSound(); // szczeka!
+        animal = new Cat();
+        animal.makeSound(); // Miałka!
+
+        System.out.println("------------");
+
+        List<Animal> animals = new ArrayList<>();
+        //Animal someAnimal = new Animal(); // abstract nas broni przed problemami typu - niewidzialne zwierzeta, figury, samochody
+       // animalKeeper.feedAnimal(someAnimal);
+        animals.add(cat);
+        animals.add(cat2);
+        animals.add(dog);
+        animals.add(dog2);
+        animals.add(new WildBoar());
+       // animals.add(someAnimal);
+
+        for (Animal anAnimal : animals) {
+            anAnimal.makeSound();
+        }
+
+
+
     }
 }
 

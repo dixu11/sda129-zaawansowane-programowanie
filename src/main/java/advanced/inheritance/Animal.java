@@ -1,14 +1,12 @@
 package advanced.inheritance;
 
-public class Animal {
+public abstract class Animal {
 
     public void eat() {
         System.out.println("Animal prepares to eat...");
     }
 
-    public void makeSound() {
-        //,,,
-    }
+    public abstract void makeSound();
 
 
 
