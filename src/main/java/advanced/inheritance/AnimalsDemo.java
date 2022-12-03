@@ -49,9 +49,6 @@ public  class AnimalsDemo {
         for (Animal anAnimal : animals) {
             anAnimal.makeSound();
         }
-
-
-
     }
 }
 
