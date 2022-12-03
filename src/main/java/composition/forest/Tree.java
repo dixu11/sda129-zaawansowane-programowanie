@@ -51,7 +51,9 @@ public class Tree {
 
 
     @Override
-    public String toString() {
+
+    @java.lang.Override
+    public java.lang.String toString() {
         return "Tree{" +
                 "lengthInMeters=" + lengthInMeters +
                 ", irrigation=" + irrigation +

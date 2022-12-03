@@ -17,7 +17,7 @@ public class Animal {
     }
 
     @Override
-    public String toString() {
+    public java.lang.String toString() {
         return "Animal{" +
                 "type=" + type +
                 ", species=" + species +
