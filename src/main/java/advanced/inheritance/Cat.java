@@ -22,6 +22,11 @@ public class Cat extends Animal{
         System.out.println("Miau, miauuuuu");
     }
 
+    @Override
+    public void makeSound() {
+        meowing();
+    }
+
     public void climbDoor() {
         System.out.println("<kot się wdrapuje i siedzi zadowolony>");
     }

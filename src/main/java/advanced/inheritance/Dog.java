@@ -1,6 +1,6 @@
 package advanced.inheritance;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
     private String name;
     private int age;
     private boolean good;
@@ -30,4 +30,8 @@ public class Dog extends Animal{
         System.out.println("Dog is eating cat");
     }
 
+    @Override
+    public void makeSound() {
+        bark();
+    }
 }

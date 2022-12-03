@@ -17,6 +17,16 @@ public class AnimalKeeper {
     public void feedAnimal(Animal animal) {
         System.out.println("Feeding animal " );
         animal.eat();
+        animal.makeSound(); // polimorfizm
+
+    /*    if (animal instanceof Dog) {  // brak polimorfizmu
+            Dog dog = (Dog) animal;
+            dog.bark();
+        } else if (animal instanceof Cat) {
+            Cat cat = (Cat) animal;
+            cat.meowing();
+        }*/
+
 //        animal.bark();
         //jesli jest psem to szczeka a jeśli kotem to miałczy
     }
