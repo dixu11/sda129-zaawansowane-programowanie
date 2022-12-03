@@ -1,19 +1,15 @@
-package advanced.inheritance;
+package advanced.inheritance.animal;
 
 public class Dog extends Animal {
-    private String name;
-    private int age;
     private boolean good;
 
     public Dog(String name, int age, boolean good) {
-        this.name = name;
-        this.age = age;
+        super(name,age);
         this.good = good;
     }
 
     public Dog() {
-        name = "Burek";
-        age = 6;
+        super("Burek",6);
         good = true;
     }
 

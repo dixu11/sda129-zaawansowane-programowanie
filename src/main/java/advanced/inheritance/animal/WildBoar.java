@@ -1,6 +1,11 @@
-package advanced.inheritance;
+package advanced.inheritance.animal;
 
 public class WildBoar extends Animal {
+
+
+    public WildBoar(String name, int age) {
+        super(name, age);
+    }
 
     @Override
     public void makeSound() {

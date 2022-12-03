@@ -1,5 +1,10 @@
 package advanced.inheritance;
 
+import advanced.inheritance.animal.Animal;
+import advanced.inheritance.animal.Cat;
+import advanced.inheritance.animal.Dog;
+import advanced.inheritance.animal.WildBoar;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,7 +48,7 @@ public  class AnimalsDemo {
         animals.add(cat2);
         animals.add(dog);
         animals.add(dog2);
-        animals.add(new WildBoar());
+        animals.add(new WildBoar("Chrumek", 4));
        // animals.add(someAnimal);
 
         for (Animal anAnimal : animals) {

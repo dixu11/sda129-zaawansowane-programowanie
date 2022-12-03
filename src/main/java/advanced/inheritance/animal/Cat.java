@@ -1,20 +1,17 @@
-package advanced.inheritance;
+package advanced.inheritance.animal;
 
 public class Cat extends Animal{
 
-    private String name;
-    private int age;
+
     private int lives;
 
     public Cat(String name, int age, int lives) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
         this.lives = lives;
     }
 
     public Cat() {
-        name = "Filemon";
-        age = 1;
+        super("Filemon",1);
         lives = 9;
     }
 

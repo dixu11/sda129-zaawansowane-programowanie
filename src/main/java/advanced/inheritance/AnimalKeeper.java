@@ -1,5 +1,7 @@
 package advanced.inheritance;
 
+import advanced.inheritance.animal.Animal;
+
 public class AnimalKeeper {
 
 /*    public void feedDog(Dog dog) {
