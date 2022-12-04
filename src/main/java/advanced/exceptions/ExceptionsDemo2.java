@@ -5,6 +5,7 @@ public class ExceptionsDemo2 {
     public static void main(String[] args) {
        try{
            method1();
+           System.out.println("test");
        }catch (MyException e){
            System.out.println("Błąd spowodowany podaniem wartości: " + e.getWrongNumber());
        }
