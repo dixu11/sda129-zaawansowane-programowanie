@@ -15,4 +15,9 @@ public class Room {
     public List<Item> getItems() {
         return items;
     }
+
+    public Item findItemByIndex(int itemIndex) {
+        Item item = items.get(itemIndex);
+        return item;
+    }
 }

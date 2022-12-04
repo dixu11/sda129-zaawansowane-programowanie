@@ -20,5 +20,9 @@ public class EscapeRoom {
         return room.getItems();
     }
 
+    public void useItem(int itemIndex) {
+        Item item = room.findItemByIndex(itemIndex);
+        System.out.println("dopasowano do przedmiotu: " + item.getName());
+    }
 
 }
