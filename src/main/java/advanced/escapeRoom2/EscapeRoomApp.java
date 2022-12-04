@@ -4,9 +4,6 @@ package advanced.escapeRoom2;
 public class EscapeRoomApp {
     public static void main(String[] args) {
         Controller controller = new Controller();
-        controller.printMenu();
-        int itemNr = controller.readNumber();
-        controller.useItem(itemNr);
-
+        controller.start();
     }
 }

@@ -6,7 +6,20 @@ import java.util.Scanner;
 //klasa odpowiedzialna za interakcje z grą
 public class Controller {
 
-    void printMenu() {
+
+    public void start() {
+        do {
+            try {
+                printMenu();
+                int itemNr = readNumber();
+                useItem(itemNr);
+            } catch (ItemException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (true);
+    }
+
+    private void printMenu() {
         System.out.println("Dostępne przedmioty:");
         EscapeRoom escapeRoom = new EscapeRoom();
         List<Item> items = escapeRoom.getItems();
@@ -16,16 +29,16 @@ public class Controller {
         }
     }
 
-    int readNumber() {
+    private int readNumber() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Wpisz numer przedmiotu: ");
         return scanner.nextInt();
     }
 
-    void useItem(int itemNr) {
+    private void useItem(int itemNr) {
         System.out.println("wybrano " + itemNr);
         EscapeRoom escapeRoom = new EscapeRoom();
-        escapeRoom.useItem(itemNr-1);
+        escapeRoom.useItem(itemNr - 1);
     }
 
 }

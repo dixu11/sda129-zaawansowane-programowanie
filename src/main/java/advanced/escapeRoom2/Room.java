@@ -17,6 +17,9 @@ public class Room {
     }
 
     public Item findItemByIndex(int itemIndex) {
+        if (itemIndex < 0 || itemIndex >= items.size()) {
+            throw new ItemException("Nie znaleziono przedmiotu o takim numerze");
+        }
         Item item = items.get(itemIndex);
         return item;
     }
