@@ -15,6 +15,7 @@ public class EscapeRoom {
         room.addItem(window);
         room.addItem(door);
     }
+
     public List<Item> getItems() {
         return room.getItems();
     }

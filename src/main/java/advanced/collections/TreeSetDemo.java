@@ -1,8 +1,6 @@
 package advanced.collections;
 
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class TreeSetDemo {
     public static void main(String[] args) {
@@ -10,11 +8,13 @@ public class TreeSetDemo {
         Person person2 = new Person("Ala", 60);
         Person person3 = new Person("Tomek", 33);
         Person person4 = new Person("Ada", 44);
+        Person person5 = new Person("Julia", 33);
 
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person3);
         System.out.println(person4);
+        System.out.println(person5);
 
 
         MyIntegerComparator c = new MyIntegerComparator();
@@ -30,6 +30,7 @@ public class TreeSetDemo {
         people.add(person2);
         people.add(person3);
         people.add(person4);
+        people.add(person5);
         System.out.println(people);
     }
 }
@@ -38,6 +39,7 @@ class MyIntegerComparator implements Comparator<Integer> {
 
     @Override
     public int compare(Integer num1, Integer num2) {
+
         if (num1 < num2) {
             return 1;
         } else if (num1 == num2) {

@@ -12,7 +12,7 @@ public class Person implements Comparable<Person>{
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
+                "name='" + name.hashCode() + '\'' +
                 ", age=" + age +
                 '}';
     }
@@ -22,7 +22,7 @@ public class Person implements Comparable<Person>{
         if (age < other.age) {
             return -1;
         } else if (age == other.age) {
-            return 0;
+            return name.compareTo(other.name);
         }else {
             return 1;
         }
