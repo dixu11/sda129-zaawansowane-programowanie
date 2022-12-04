@@ -8,8 +8,8 @@ public class Controller {
     void printMenu() {
         System.out.println("Dostępne przedmioty:");
         EscapeRoom escapeRoom = new EscapeRoom();
-        List<Object> items = escapeRoom.getItems();
-        for (Object item : items) {
+        List<Item> items = escapeRoom.getItems();
+        for (Item item : items) {
             System.out.println(item.getName());
         }
         //dostać przedmioty z pokoju
